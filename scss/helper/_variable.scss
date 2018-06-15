@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////
+// COLOR
+////////////////////////////////////////////////////
+
+$cornflower-blue: #4A90E2;
+$congress-blue  : #00408B;
+$monza          : #D0021B;
+$buttercup      : #F5A623;
+$peach-cream    : #FFF2DC;
+$concrete       : #F2F2F2;
+$silver         : #C8C8C8;
+$boulder        : #757575;
+$white          : #FFFFFF;
+$black          : #000000;
+$mercury        : #E1E1E1;
+
+$list__item_bg			: $concrete;
+$list__item_highlight	: $peach-cream;
+$theme__color			: $cornflower-blue;
+$icon__present			: $boulder;
+$divider__color			: $silver;
+
+////////////////////////////////////////////////////
+// TYPOGRAPHY
+////////////////////////////////////////////////////
+
+//Font size
+$font__size:(
+	s : 16px,
+	m : 20px,
+	l : 24px,
+);
+
+//Font weight
+$font__weight: (
+	regular  : 400,
+	medium   : 500,
+);
+
+
+
+////////////////////////////////////////////////////
+// SIZE
+////////////////////////////////////////////////////
+
+$tab__height			: 76px;
+$gutter__size: (
+	default				: 24px,
+	s					: 16px,
+	xs					: 8px,
+);
+$icon__size_default		: 24px;
+$border__radius_default	: 2px;
+$border__radius_form	: 5px;
