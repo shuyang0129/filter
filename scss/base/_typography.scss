@@ -4,3 +4,38 @@ TYPOGRAPHY
 
 /*--Basic Style--*/
 
+.title {
+    @include font__weight(bold);
+    @include font__size(l);
+}
+
+.title_2 {
+    @include font__weight(bold);
+    @include font__size(xl);
+}
+
+.subtitle {
+    @include font__weight(bold);
+    @include font__size(m);
+}
+
+.paragraph {
+    @include font__weight(regular);
+    @include font__size(s);
+}
+
+.remark {
+    @include font__weight(regular);
+    @include font__size(s);
+}
+
+.placeholder {
+    @include font__weight(regular);
+    @include font__size(m);
+}
+
+.label {
+    @include font__weight(regular);
+    @include font__size(s);
+    font-style: italic;
+}
