@@ -2,23 +2,31 @@
 // COLOR
 ////////////////////////////////////////////////////
 
-
+$purple-heart	: #7828B4;
+$electric-violet: #9013FE;
+$concrete		: #F2F2F2;
+$gallery		: #EBEBEB;
+$alto			: #D7D7D7;
+$dusty-gray		: #9B9B9B;
+$white			: #FFFFFF;
+$black			: #000000;
 
 ////////////////////////////////////////////////////
 // TYPOGRAPHY
 ////////////////////////////////////////////////////
-
+//36,24,20,16
 //Font size
 $font__size:(
 	s : 16px,
 	m : 20px,
 	l : 24px,
+	xl: 36px,
 );
 
 //Font weight
 $font__weight: (
-	regular  : 400,
-	medium   : 500,
+	regular : 400,
+	bold	: 500,
 );
 
 
