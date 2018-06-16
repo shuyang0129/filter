@@ -16,30 +16,13 @@
 	@extend %font__size_#{$level};
 }
 
-@mixin inputPlaceholder() {
-    $selector: '';
-    $prefixes: (
-        moz: "::-moz",
-        webkit: "::-webkit",
-        ie: ":-ms"
-    );
-    @each $prop, $value in $prefixes {
-        @if $prop != "moz" {
-            $selector: #{$value}-input-placeholder;
-        } @else {
-            $selector: #{$value}-placeholder;
-        }
-        @if & {
-            &#{$selector} {
-                @content;
-            }
-        } @else {
-            #{$selector} {
-                @content;
-            }
-        }
-    }
-    &::placeholder {
-      @content;
-    }
+////////////////////////////////////////////////////
+// INPUT PLACEHOLDER
+////////////////////////////////////////////////////
+
+@mixin placeholder {
+    &::placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
 }
