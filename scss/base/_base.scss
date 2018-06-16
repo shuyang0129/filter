@@ -1,7 +1,7 @@
-input::placeholder {
-    color       : $color__placeholder;
-    font-style  : italic;
-}
+/*-----------------------------------------------------
+INPUT
+-----------------------------------------------------*/
+
 input:focus {
     outline     : none;
 }
@@ -12,4 +12,11 @@ input[type="search"] {
     border-style    : none;
     background-color: inherit;
     padding-right   : 5px;
+}
+
+input::placeholder {
+    @include inputPlaceholder() {
+        color       : $color__placeholder;
+        font-style  : italic;
+    }
 }
