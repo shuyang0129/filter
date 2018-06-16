@@ -1,0 +1,15 @@
+input::placeholder {
+    color       : $color__placeholder;
+    font-style  : italic;
+}
+input:focus {
+    outline     : none;
+}
+
+input[type="search"] {
+    @extend .placeholder;
+    @extend %width_full;
+    border-style    : none;
+    background-color: inherit;
+    padding-right   : 5px;
+}
