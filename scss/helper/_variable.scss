@@ -11,10 +11,15 @@ $dusty-gray		: #9B9B9B;
 $white			: #FFFFFF;
 $black			: #000000;
 
+$color__header_bg			: $purple-heart;
+$color__logo				: $white;
+$color__placeholder			: $dusty-gray;
+$color__search-bar_mobile	: $gallery;
+
 ////////////////////////////////////////////////////
 // TYPOGRAPHY
 ////////////////////////////////////////////////////
-//36,24,20,16
+
 //Font size
 $font__size:(
 	s : 16px,
