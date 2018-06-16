@@ -1,7 +1,13 @@
+/*-----------------------------------------------------
+HEADER
+-----------------------------------------------------*/
+
+/*--Header--*/
 header {
     background-color: $color__header_bg;
 }
 
+/*--Logo Area--*/
 .logo-area {
     @extend %center_center;
     @extend %width_full;
@@ -12,6 +18,7 @@ header {
     color: $color__logo;
 }
 
+/*--Search Bar Area--*/
 .search__bar {
     @extend %center_vertical;
     @extend %width_full;
