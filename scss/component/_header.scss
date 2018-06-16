@@ -1,0 +1,33 @@
+header {
+    background-color: $color__header_bg;
+}
+
+.logo-area {
+    @extend %center_center;
+    @extend %width_full;
+    height          : $head-bar__height_default;
+}
+
+#logo {
+    color: $color__logo;
+}
+
+.search__bar {
+    @extend %center_vertical;
+    @extend %width_full;
+    height          : 55px;
+    background-color: $color__search-bar_mobile;
+}
+
+.search__field {
+    @extend %center_vertical;
+    @extend %width_full;
+    margin          : 10px 40px;
+    padding-bottom  : 5px;
+    border-bottom   : 1px solid $black;
+}
+
+.icon__search {
+    margin-right    : 24px;
+}
+
