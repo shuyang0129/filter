@@ -16,6 +16,9 @@ header {
 
 #logo {
     color: $color__logo;
+    width: 105px;
+    height: auto;
+
 }
 
 /*--Search Bar Area--*/
@@ -24,6 +27,7 @@ header {
     @extend %width_full;
     height          : 55px;
     background-color: $color__search-bar_mobile;
+    @include prefix(box-shadow, 0 5px 10px 0 $color__shadow);
 }
 
 .search__field {
