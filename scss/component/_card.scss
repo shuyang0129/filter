@@ -1,0 +1,100 @@
+/*-----------------------------------------------------
+CARD CONTAINER | WHOLE CARD
+-----------------------------------------------------*/
+
+.card__container {
+    background-color    : $color__card;
+}
+
+
+
+/*-----------------------------------------------------
+CARD PHOTO
+-----------------------------------------------------*/
+
+//Use background property to control image
+.card__photo {
+    width               : 100%;
+    height              : 196px;
+    //backgroudn property
+    background-position : center;
+    background-size     : cover;
+    background-repeat   : no-repeat;
+}
+
+//Will use javscript dynamically replacing photo for each card
+#card_1 .card__photo {
+    background-image: url("https://images.unsplash.com/photo-1508341421810-36b8fc06075b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae31a4b53a0760596a4cdd94b3d03b95&auto=format&fit=crop&w=1667&q=80");
+}
+
+#card_2 .card__photo {
+    background-image: url("https://images.unsplash.com/photo-1495100793874-7f94aecae1fb?ixlib=rb-0.3.5&s=2adb121bcbbff90506b5c2570d939084&auto=format&fit=crop&w=1500&q=80");
+}
+
+
+
+/*-----------------------------------------------------
+CARD CONTAINER | ALL TEXT CONTENT
+-----------------------------------------------------*/
+
+.card__container_content {
+    padding: 24px;
+}
+
+
+
+/*-----------------------------------------------------
+CARD TITLE & DESCRIPTION
+-----------------------------------------------------*/
+
+.card__title {
+    margin-bottom: 6px;
+}
+
+
+
+/*-----------------------------------------------------
+CARD MAIN INFOMATION | AUTHOR NAME & CATEGORY
+-----------------------------------------------------*/
+
+.card__container_main-info {
+    @extend %center_vertical;
+    margin          : 16px 0;
+}
+
+.card__author-name {
+    margin-right    : 20px;
+}
+
+.card__category {
+    padding         : 4px 16px;
+    background-color: $color__category_bg;
+    border-radius   : 100px;
+}
+
+
+
+/*-----------------------------------------------------
+CARD SUB INFOMATION | ICON & TEXT
+-----------------------------------------------------*/
+
+.card__container_sub-info {
+    > :nth-child(n) {
+		margin-bottom: 16px;
+	}
+
+	> :last-child {
+		margin-bottom: 0px;
+	}
+}
+
+.sub-info {
+    @extend %center_vertical;
+    .icon {
+        margin-right: 8px;
+        height      : 16px;
+        width       : 16px;
+    }
+}
+            
+
