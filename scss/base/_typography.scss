@@ -35,7 +35,41 @@ TYPOGRAPHY
 }
 
 .label {
-    @include font__weight(regular);
+    @include font__weight(light);
     @include font__size(s);
     font-style: italic;
+}
+
+
+
+/*-----------------------------------------------------
+CARD
+-----------------------------------------------------*/
+
+.card__title {
+    @extend .title;
+    color       : $color__title;
+}
+
+.card__supporting-text {
+    @extend .paragraph;
+    color       : $black;
+    line-height : 1.5;
+}
+
+.card__author-name {
+    @include font__weight(bold);
+    @include font__size(s);
+}
+
+.card__category {
+    @extend .label;
+    color       : $white;
+    text-align  : center;
+}
+
+.card__sub-info_text {
+    @extend .remark;
+    @extend %text__overflow_single-line;
+    color       : #9b9b9b;
 }
